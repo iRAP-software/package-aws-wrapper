@@ -292,4 +292,17 @@ class S3Client
         $manager = new \Aws\S3\Transfer($this->m_client, $source, $destination);
         $manager->transfer();
     }
+    
+    /**
+     * Delete objects from bucket matching optional prefix and regex
+     * @param string $bucketName - the name of the bucket you wish to delete from.
+     * @return type
+     */
+    public function deleteMatchingObjects(string $bucketName, string $prefix='', string $regex='')
+    {
+        $result = $this->m_client->deleteMatchingObjects($bucketName, $prefix, $regex);
+        
+        return $result;
+    }
+
 }
