@@ -283,7 +283,7 @@ class S3Client
     {
         if (!is_dir($destination))
         {
-            throw new Exception('Destination needs to be a path to a folder,');
+            throw new \Exception('Destination needs to be a path to a folder,');
         }
         
         // Where the files will be source from
