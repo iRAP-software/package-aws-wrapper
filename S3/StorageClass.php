@@ -8,6 +8,9 @@ namespace iRAP\AwsWrapper\S3;
 
 class StorageClass 
 {
+
+    private $m_string;
+    
     private function __construct($string) { $this->m_string = $string; }
     
     /**
