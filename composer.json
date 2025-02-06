@@ -15,8 +15,8 @@
     ],
     "repositories": [ { "type": "composer", "url": "http://satis.irap-dev.org/" } ],
     "require": {
-        "php": ">=5.3.0",
-        "irap/core-libs": "1.1.*",
+        "php": ">=8.0",
+        "irap/core-libs": "1.2.*",
         "aws/aws-sdk-php" : "3.*",
         "ext-libxml" : "*",
         "ext-simplexml" : "*"
